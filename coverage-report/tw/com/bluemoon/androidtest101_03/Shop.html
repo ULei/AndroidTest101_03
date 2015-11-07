@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>AndroidTest101_03\app\src\main\java\tw\com\bluemoon\androidtest101_03\Shop.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package tw.com.bluemoon.androidtest101_03;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.Calendar;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * Created by Chris on 2015/11/7.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>8</td><td class='count'>12</td>
+      <td><pre class='prettyprint covered' id='l8s0'>public class Shop {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>9</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private Calendar <span class='instance covered' title='Reads: 12 Writes: 12'>c</span>;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>11</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public void sell() {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>12</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#00ff00' onclick='hidePath()'>Path coverage: 3/3</span>
+        <span class='covered' onclick="showPath(this,'l12s0 l15s0 l16s0 l20s0')">A: 3</span>
+        <span class='covered' onclick="showPath(this,'l12s0 l15s0 l15s1 l18s0 l20s0')">B: 6</span>
+        <span class='covered' onclick="showPath(this,'l12s0 l15s0 l15s1 l16s0 l20s0')">C: 3</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td class='count'>12</td>
+      <td><pre class='prettyprint covered' id='l12s0'>        c = Calendar.getInstance();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td class='count'>12</td>
+      <td><pre class='prettyprint covered' id='l13s0'>        int month = c.get(Calendar.MONTH) + 1;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>15</td><td class='count'>12</td>
+      <td><pre class='prettyprint jmp'>        <span id='l15s0' title='Executions: 12' class='covered'>if(isSpring(month)</span> || <span id='l15s1' title='Executions: 9' class='covered'>isSummer(month))</span>{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>16</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered' id='l16s0'>            System.out.println("賣冰");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }else{</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>18</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered' id='l18s0'>            System.out.println("賣薑母鴨");</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>19</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td class='count'>12</td>
+      <td><pre class='prettyprint covered' id='l20s0'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>22</td><td>&nbsp;</td>
+      <td><pre class='comment'>    //3-5</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private boolean isSpring(int month) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td class='count'>12</td>
+      <td><pre class='prettyprint jmp'>        <span id='l24s0' title='Executions: 12' class='covered'>return month > 2</span> && <span id='l24s1' title='Executions: 10' class='covered'>month &lt; 6;</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'>25</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>27</td><td>&nbsp;</td>
+      <td><pre class='comment'>    //6-8</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private boolean isSummer(int month) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>9</td>
+      <td><pre class='prettyprint jmp'>        <span id='l29s0' title='Executions: 9' class='covered'>return month > 5</span> && <span id='l29s1' title='Executions: 7' class='covered'>month &lt; 9;</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
